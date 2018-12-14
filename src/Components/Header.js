@@ -6,8 +6,9 @@ class Header extends Component {
 
         return (
             <div className="center">
-                <div className="centerImg">
-                    <h1 className={"bigTitle"}>{this.props.title}</h1>
+                <div className="centerImg ">
+                    <div className="centercolor"/>
+                    <h1 className="bigTitle"><b>{this.props.title}</b></h1>
                 </div>
             </div>
         )

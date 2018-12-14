@@ -28,14 +28,14 @@ class HomePage extends Component {
 
     }
     render() {
-        const activeStyle = { color: '#907114' };
+        const activeStyle = { color: '#C2A346' };
 
         return (
             <div className={"content"}>
                 <Header title={this.state.title}/>
                 <div className={"center buttonbg"}>
-                    <button style ={this.state.active === 'ALBUMS' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="ALBUMS" className={"customButtom topButton"}>MES ALBUMS</button>
-                    <button style ={this.state.active === 'PLAYLIST' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="PLAYLIST" className={"customButtom bottomButton "}>MES PLAYLISTS</button>
+                    <button style ={this.state.active === 'ALBUMS' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="ALBUMS" className={"customButtom topButton"}><b>MES ALBUMS</b></button>
+                    <button style ={this.state.active === 'PLAYLIST' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="PLAYLIST" className={"customButtom bottomButton "}><b>MES PLAYLISTS</b></button>
                 </div>
 
                 {this.state.active === "ALBUMS"&&
