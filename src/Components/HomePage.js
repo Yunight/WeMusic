@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Header from "./Header";
 import MyAlbums from "./MyAlbums";
 import MyPlaylist from "./MyPlaylist";
+import datas from '../Data/data'
+
+const Albums = ['Titre'];
+const Playlist = ['Titre','Taille'];
 
 class HomePage extends Component {
     constructor(props) {
@@ -34,17 +38,17 @@ class HomePage extends Component {
             <div className={"content"}>
                 <Header title={this.state.title}/>
                 <div className={"center buttonbg"}>
-                    <button style ={this.state.active === 'ALBUMS' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="ALBUMS" className={"customButtom topButton"}><b>MES ALBUMS</b></button>
-                    <button style ={this.state.active === 'PLAYLIST' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="PLAYLIST" className={"customButtom bottomButton "}><b>MES PLAYLISTS</b></button>
+                    <b><button style ={this.state.active === 'ALBUMS' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="ALBUMS" className={"customButtom topButton"}>MES ALBUMS</button></b>
+                    <b><button style ={this.state.active === 'PLAYLIST' ? activeStyle :{}} onClick={(e) => this.changeTitle(e)} value="PLAYLIST" className={"customButtom bottomButton "}>MES PLAYLISTS</button></b>
                 </div>
 
                 {this.state.active === "ALBUMS"&&
-                    <MyAlbums/>
+                    <MyAlbums datas = {datas.ALBUMS} columns ={Albums}/>
                 }
 
                 {
                     this.state.active === "PLAYLIST"&&
-                    <MyPlaylist/>
+                    <MyPlaylist datas = {datas.PLAYLIST} columns ={Playlist} />
                 }
             </div>
         )

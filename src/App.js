@@ -5,6 +5,8 @@ import HomePage from "./Components/HomePage";
 import MyAlbums from "./Components/MyAlbums";
 import MyPlaylist from "./Components/MyPlaylist";
 
+
+
 class App extends Component {
   render() {
     return <BrowserRouter>
@@ -16,11 +18,11 @@ class App extends Component {
         </Route>
 
         <Route exact path="/albums">
-          <MyAlbums/>
+          <MyAlbums />
         </Route>
 
         <Route exact path="/playlists">
-          <MyPlaylist/>
+          <MyPlaylist />
         </Route>
 
       </Switch>

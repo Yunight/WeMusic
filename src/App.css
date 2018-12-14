@@ -2,11 +2,21 @@
 
 *{
   font-family: 'Lato', sans-serif;
-  margin:0
+  margin:0;
+  color:white;
+}
+
+html,body {
+  height: 100%;
+}
+
+#root{
+  height: inherit;
 }
 
 .App {
   text-align: center;
+  height: 100%;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -22,6 +32,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.content{
+  height: inherit;
 }
 
 .App-link {
@@ -84,6 +98,50 @@
   border:none;
 }
 
+.alignLeft{
+  text-align: left;
+}
+
+.tableTitle{
+  background-color: #907114;
+  color:white;
+  font-size: 20px;
+  padding: 20px 70px;
+}
+
+.rowData{
+  font-size: 20px;
+  padding: 20px 70px;
+}
+
+
+.nospacing{
+  border-spacing: 0px;
+  width: 100%;
+}
+
+.albumtitle{
+  text-align: left ;
+}
+
+td{
+  font-size: 20px;
+  padding: 20px 70px;
+}
+
+tr{
+  height: 40px;
+}
+tr:nth-child(even) {
+  background-color: #373737;
+}
+
+.tableContainer{
+  height: 100%;
+  background-color: #212121;
+}
+
+
 
 @media screen and (max-width: 640px) {
   .center {
@@ -122,4 +180,42 @@
     width: 100%;
     margin: auto;
   }
+
+  .tableTitle{
+    background-color: #907114;
+    color:white;
+    font-size: 15px;
+    padding: 20px 70px;
+  }
+
+  .titleLeft{
+    padding-left: 50px;
+    width: 70%;
+  }
+
+  .titleRight{
+    padding-right: 22px;
+  }
+
+  .albumtitle{
+    text-align: center ;
+  }
+
+  .playlisttitle{
+    text-align: left;
+  }
+
+  .playlistsize{
+    text-align: right;
+  }
+
+  .onePlaylist{
+    padding: 20px 50px;
+    font-size: 15px;
+  }
+
+  td{
+    padding: 20px 50px;
+  }
+
 }
