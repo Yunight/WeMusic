@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+  font-family: 'Lato', sans-serif;
+  margin:0
+}
+
 .App {
   text-align: center;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -29,4 +35,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.center {
+  width: 70%;
+  margin: auto;
+}
+
+.centerImg {
+  font-family: 'Lato', sans-serif;
+  background-image: url('./Pictures/header.jpeg');
+  background-size : cover;
+  background-position: bottom;
+  height: 170px;
+}
+
+
+.buttonbg{
+  background-color: #212121;
+  height: 75px;
+}
+
+.customButtom{
+  width: 45%;
+  height: 75%;
+  margin: 10px 2%;
+  background-color: black;
+  color:white;
+  border:none;
+}
+.bigTitle {
+  color:white;
+  position: relative;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .center {
+    width: 100%;
+    margin: auto;
+  }
+
+  .customButtom{
+    width: 90%;
+    height: 34%;
+    margin: 2%;
+    background-color: black;
+    color:white;
+    border:none;
+  }
+
+  .buttonbg{
+    height: 150px;
+
+  }
+
+  .topButton{
+    margin: 4% 4% 2% 4%;
+  }
+
+  .bottomButton{
+    margin: 2% 4% 2% 4%;
+  }
+
+  .active{
+    color:red;
+  }
+
 }
