@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import OneAlbum from "./OneAlbum";
 import OnePlaylist from "./OnePlaylist";
 
 

@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import cross from '../Pictures/icon-empty.svg'
-
-
 class OnePlaylist extends Component {
 
 
