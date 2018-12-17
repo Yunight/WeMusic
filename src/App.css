@@ -141,6 +141,11 @@ tr:nth-child(even) {
   background-color: #212121;
 }
 
+.marginleftminus25{
+  margin-left: -45px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
 
 
 @media screen and (max-width: 640px) {

@@ -15,7 +15,7 @@ class OnePlaylist extends Component {
 
             if(columnName ===  "Titre"){
                 if(data.size === "0"){
-                    cellContent = <tr className={"playlisttitle"}>  {data.name}</tr>
+                    cellContent = <tr className={"playlisttitle"}> <img className={"marginleftminus25"}  src={require('../Pictures/icon-empty.svg')} />  {data.name}</tr>
                 }else{
                     cellContent = <tr className={"playlisttitle"}>{data.name}</tr>
                 }
