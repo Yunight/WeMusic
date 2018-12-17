@@ -223,4 +223,8 @@ tr:nth-child(even) {
     padding: 20px 50px;
   }
 
+  .marginleftminus25{
+    margin-right: 20px;
+  }
+
 }
